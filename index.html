@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>jQuery Form Submit</title>
+<link href="https://cdn.statically.io/gh/mikorecare/email-neutron-pos-embed/main/styles.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/mikorecare/email-neutron-pos-embed/main/submit.js">
+</script>
+</head>
+<body>
+    <div id="email-neutron-pos">
+    <form action="http://localhost:3333/api/v1/recipients/embed" method="post" name="email-neutron-pos-form" id="email-neutron-pos-form" novalidate>
+            <div>
+                <h2>
+                    Want to know when we’re going to open?
+                </h2>
+                <h4>Type your email below to be the first to know!</h4>
+            </div>
+           
+            <div>
+            <input type="hidden" name="email-neutron-pos-id" id="email-neutron-pos-id" value="63cde7529b8391388065cf5d">
+            </div>
+            <div class="email-neutron-pos-field-group">
+            <input type="text" name="email-neutron-pos-first-name" id="email-neutron-pos-first-name" placeholder="First Name" required>
+            </div>
+            <div class="email-neutron-pos-field-group">
+            <input type="text" name="email-neutron-pos-last-name" id="email-neutron-pos-last-name" placeholder="Last Name" required>
+            </div>
+        <div class="email-neutron-pos-field-group">
+            <input type="email" name="email-neutron-pos-email" id="email-neutron-pos-email" placeholder="Email" required>
+        </div>
+        <div class="clear">
+            <input type="submit" id="email-neutron-pos-embedded-subscribe" class="button" value="SUBSCRIBE">
+        </div>
+        
+    </form>
+    </div>
+</body>
+</html>
+
