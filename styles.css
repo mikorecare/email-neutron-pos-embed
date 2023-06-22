@@ -10,31 +10,52 @@ h2 {
 #email-neutron-pos h4 {
     color: #FFFFFF!important; font-weight:bold;font-size:1.2em; padding: 1%; border-width: 0; margin: 0 0 5px;
 }
+#email-neutron-pos button {border: 1px solid #ABB0B2; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;}
+#email-neutron-pos button:focus {border-color:#333;}
 #email-neutron-pos input {border: 1px solid #ABB0B2; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;}
 #email-neutron-pos input:focus {border-color:#333;}
 #email-neutron-pos .button 
 {
-    color: #FFFFFF!important; 
-    border-width: 0px!important; 
+    color: #FFFFFF; 
+    border-width: 0px; 
     background-color: #0C71C3; 
     border: 2px solid transparent; 
     border-radius:11px; 
-    transition: all 0.23s ease-in-out 0s; 
-    color: #FFFFFF; cursor: pointer; 
-    display: inline-block; 
     font-size:20px; 
     font-weight: bold; 
     min-height: 50px; 
     line-height: 32px; 
     text-align: center; 
-    text-decoration: none; 
-    vertical-align: top; 
-    white-space: nowrap; 
+    vertical-align: top;  
     width: 96%; 
     margin:0 0 15px;
-    position: relative;
+    transition: all 0.5s;
 }
-#email-neutron-pos .button:hover {background-color:#777;}
+
+#email-neutron-pos .button{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+#email-neutron-pos .button:after {
+    color: #FFFFFF; 
+    content: '>>';
+    position: relative;
+    opacity: 0;  
+    right: 15px;
+    transition: 0.5s;
+}
+#email-neutron-pos .button:hover 
+{ 
+    padding-right: 24px;
+    padding-left:8px;
+}
+#email-neutron-pos .button:hover:after {
+    vertical-align: top; 
+    opacity: 1;
+    right: -20px;
+  }
 #email-neutron-pos .small-meta {font-size: 11px;}
 #email-neutron-pos .nowrap {white-space:nowrap;}
 
