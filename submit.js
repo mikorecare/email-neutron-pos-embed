@@ -3,6 +3,8 @@ $(document).ready(function () {
   var showButton = $('#email-neutron-pos-embedded-subscribe');
   var errorResponse = $('#email-neutron-pos-error-response');
   var errorEmail = $('#email-neutron-pos-error-email');
+  var mainForm = $('#email-neutron-pos-form');
+  var successResponse = $('#email-neutron-pos-success-response');
     $("#email-neutron-pos-form").submit(function (event) {
       
     
@@ -53,9 +55,11 @@ $(document).ready(function () {
           dataType: "json",
           encode: true,
         }).done(function (data) {
-          console.log(data);
+          // console.log(data);
           loadingForm.hide();
           showButton.show();
+          mainForm.hide();
+          successResponse.show();
         }).fail(function(data){
           console.log("failed")
         });
