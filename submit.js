@@ -1,6 +1,9 @@
 $(document).ready(function () {
+  var loadingForm = $('#email-neutron-pos-loader');
+  var showButton = $('#email-neutron-pos-embedded-subscribe');
     $("#email-neutron-pos-form").submit(function (event) {
-  
+      
+    
       if($.trim($("#email-neutron-pos-id").val())===""){
           event.preventDefault();
           return false;
@@ -28,22 +31,32 @@ $(document).ready(function () {
         lname: $("#email-neutron-pos-last-name").val().toLowerCase(),
         email: $("#email-neutron-pos-email").val().toLowerCase(),
       };
-  
-      $.ajax({
-        type: "POST",
-        url: "http://localhost:3333/api/v1/recipients/embed",
-        data: formData,
-        dataType: "application/json",
-        encode: true,
-      }).done(function (data) {
-        alert("success!")
-      });
-  
+      loadingForm.show();
+      showButton.hide();
+      
+        $.ajax({
+          type: "POST",
+          url: "http://localhost:3333/api/v1/recipients/embed",
+          data: formData,
+          dataType: "json",
+          encode: true,
+        }).done(function (data) {
+          console.log(data);
+          loadingForm.hide();
+          showButton.show();
+        }).fail(function(data){
+          console.log("failed")
+        });
+      
+        event.preventDefault();
+        
   
       }
       
       event.preventDefault();
     });
+
+
       function isEmail(email) {
           var regex = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
           if(!regex.test(email)) {

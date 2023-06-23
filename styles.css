@@ -82,3 +82,27 @@ h2 {
 #email-neutron-pos-embedded-subscribe {clear:both; width:auto; display:block; margin:1em 0 1em 5%;}
 #email-neutron-pos #email-neutron-pos-form div.mce_inline_error {display:inline-block; margin:2px 0 1em 0; padding:3px; background-color:rgba(255,255,255,0.85); -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; font-size:14px; font-weight:normal; z-index:1; color:#e85c41;}
 #email-neutron-pos #email-neutron-pos-form input.mce_inline_error {border:2px solid #e85c41;}
+
+#email-neutron-pos .buttonload {
+    display:none;
+    color: #FFFFFF; 
+    border-width: 0px; 
+    background-color: #8fa6b9; 
+    border: 2px solid transparent; 
+    border-radius:11px; 
+    font-size:20px; 
+    font-weight: bold; 
+    min-height: 50px; 
+    line-height: 32px; 
+    text-align: center; 
+    vertical-align: top;  
+    width: 96%; 
+    margin:0 0 15px;
+    transition: all 0.5s;
+}
+
+/* Add a right margin to each icon */
+#email-neutron-pos .fa {
+  margin-left: -12px;
+  margin-right: 8px;
+}
