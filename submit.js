@@ -1,26 +1,38 @@
 $(document).ready(function () {
   var loadingForm = $('#email-neutron-pos-loader');
   var showButton = $('#email-neutron-pos-embedded-subscribe');
+  var errorResponse = $('#email-neutron-pos-error-response');
+  var errorEmail = $('#email-neutron-pos-error-email');
     $("#email-neutron-pos-form").submit(function (event) {
       
     
       if($.trim($("#email-neutron-pos-id").val())===""){
+          errorResponse.show();
+          errorEmail.hide();
           event.preventDefault();
           return false;
       }
       else if($.trim($("#email-neutron-pos-first-name").val())===""){
+          errorResponse.show();
+          errorEmail.hide();
           event.preventDefault();
           return false;
       }
       else if($.trim($("#email-neutron-pos-last-name").val())===""){
+          errorResponse.show();
+          errorEmail.hide();
           event.preventDefault();
           return false;
       }
       else if($.trim($("#email-neutron-pos-email").val())===""){
+          errorResponse.show();
+          errorEmail.hide();
           event.preventDefault();
           return false;
       }
       else if(isEmail($("#email-neutron-pos-email").val())===false){
+          errorEmail.show();
+          errorResponse.hide();
           event.preventDefault();
           return false;
       }
