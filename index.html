@@ -3,17 +3,15 @@
 <head>
 <meta charset="utf-8">
 <title>jQuery Form Submit</title>
-<!-- <link href="https://cdn.statically.io/gh/mikorecare/email-neutron-pos-embed/main/styles.css" rel="stylesheet" type="text/css"> -->
 
 
-<!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/mikorecare/email-neutron-pos-embed/main/submit.js">
-</script> -->
 
 </script>
 </head>
 <body>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="styles.css" rel="stylesheet" type="text/css"> 
+    <link href="https://cdn.statically.io/gh/mikorecare/email-neutron-pos-embed/main/styles.css" rel="stylesheet" type="text/css">
+    <!-- <link href="styles.css" rel="stylesheet" type="text/css">  for local develpment only-->
     <div id="email-neutron-pos">
         <div>
             <h2>
@@ -24,9 +22,9 @@
     <div id="email-neutron-pos-success-response">
         <h2>Thank you! Your email address has been saved.</h2>
     </div>
-    <form action="http://localhost:3333/api/v1/recipients/embed" method="post" name="email-neutron-pos-form" id="email-neutron-pos-form" novalidate> 
+    <form action="https://api-email-dev.neutronpos.com/api/v1/recipients/embed" method="post" name="email-neutron-pos-form" id="email-neutron-pos-form" novalidate> 
             <div>
-            <input type="hidden" name="email-neutron-pos-id" id="email-neutron-pos-id" value="63cde8049b8391388065cfbe">
+            <input type="hidden" name="email-neutron-pos-id" id="email-neutron-pos-id" value="63cdfb5fa8f92a2230ca7e76">
             </div>
             <div class="email-neutron-pos-field-group">
             <input type="text" name="email-neutron-pos-first-name" id="email-neutron-pos-first-name" placeholder="First Name" required>
@@ -48,7 +46,8 @@
     </form>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script type="text/javascript" src="submit.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/mikorecare/email-neutron-pos-embed/main/submit.js"></script>
+    <!-- <script type="text/javascript" src="submit.js"></script> for local develpment only-->
 </body>
 </html>
 
