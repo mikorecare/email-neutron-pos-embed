@@ -60,7 +60,7 @@ h2 {
 #email-neutron-pos .nowrap {white-space:nowrap;}
 
 #email-neutron-pos .email-neutron-pos-field-group {clear:left; position:relative; width:96%; padding-bottom:3%; min-height:50px; display:grid;}
-#email-neutron-pos .size1of2 {clear:none; display:inline-block; width:46%; margin-right:4%;}
+#email-neutron-pos .size1of2 {clear:none; float:left; display:inline-block; width:46%; margin-right:4%;}
 * html #email-neutron-pos .size1of2 {margin-right:2%; /* Fix for IE6 double margins. */}
 #email-neutron-pos .email-neutron-pos-field-group label {display:block; margin-bottom:3px;}
 #email-neutron-pos .email-neutron-pos-field-group input {display:flex; width:100%; padding:8px 0; text-indent:2%;}
@@ -75,11 +75,12 @@ h2 {
 #email-neutron-pos .email-neutron-pos-field-group.input-group input {display:inline; width:auto; border:none;}
 #email-neutron-pos div#email-neutron-pos-responses {float:left; top:-1.4em; padding:0em .5em 0em .5em; overflow:hidden; width:90%; clear: both;}
 #email-neutron-pos div.response {margin:1em 0 em; padding:1em .5em .5em 0; font-weight:bold; float:left; top:-1.5em; z-index:1; width:80%; display: inline; }
-#email-neutron-pos #email-neutron-pos-error-response span {display:none;}
-#email-neutron-pos #email-neutron-pos-error-submit span {display:none; font-size: 12px; font-weight: bold;}
-#email-neutron-pos #email-neutron-pos-error-email span {display:none;}
-#email-neutron-pos #email-neutron-pos-success-response span {color:#ffffff; display:none;}
+#email-neutron-pos #email-neutron-pos-error-response {display:none;}
+#email-neutron-pos #email-neutron-pos-error-submit {display:none; font-size: 12px; font-weight: bold;}
+#email-neutron-pos #email-neutron-pos-error-email {display:none;}
+#email-neutron-pos #email-neutron-pos-success-response {color:#ffffff; display:none;}
 #email-neutron-pos label.error {display:block; float:none; width:auto; margin-left:1.05em; text-align:left; padding:.5em 0 2em; color:rgb(255, 251, 0); font-weight:bold; min-height: 50px;}
+#email-neutron-pos span.error {display:block; float:none; width:auto; margin-left:1.05em; text-align:left; padding:.5em 0 2em; color:rgb(255, 251, 0); font-weight:bold; min-height: 50px;}
 #email-neutron-pos .helper_text {color: #8d8985; margin-top: 2px; display: inline-block; padding: 3px; background-color: rgba(255,255,255,0.85); -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; font-size: 14px; font-weight: normal; z-index: 1;}
 #email-neutron-pos-embedded-subscribe {clear:both; width:auto; display:block; margin:1em 0 1em 5%;}
 #email-neutron-pos #email-neutron-pos-form div.mce_inline_error {display:inline-block; margin:2px 0 1em 0; padding:3px; background-color:rgba(255,255,255,0.85); -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; font-size:14px; font-weight:normal; z-index:1; color:#e85c41;}
