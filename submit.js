@@ -56,7 +56,7 @@ $(document).ready(function () {
       
         $.ajax({
           type: "POST",
-          url: "http://localhost:3333/api/v1/recipients/embed",
+          url: "https://api-email-dev.neutronpos.com/api/v1/recipients/embed",
           data: formData,
           dataType: "json",
           encode: true,
