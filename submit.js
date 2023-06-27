@@ -47,8 +47,8 @@ $(document).ready(function () {
       else{
           var formData = {
         id: $("#email-neutron-pos-id").val(),  
-        fname: $("#email-neutron-pos-first-name").val().toLowerCase(),
-        lname: $("#email-neutron-pos-last-name").val().toLowerCase(),
+        fname: capitalizeFirstLetter($("#email-neutron-pos-first-name").val().toLowerCase()),
+        lname: capitalizeFirstLetter($("#email-neutron-pos-last-name").val().toLowerCase()),
         email: $("#email-neutron-pos-email").val().toLowerCase(),
       };
       loadingForm.show();
@@ -91,6 +91,10 @@ $(document).ready(function () {
       event.preventDefault();
     });
 
+    function capitalizeFirstLetter(string) {
+      string  = string.toLowerCase();
+     return string.charAt(0).toUpperCase() + string.slice(1);
+ }
 
       function isEmail(email) {
           var regex = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
