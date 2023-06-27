@@ -5,6 +5,7 @@ $(document).ready(function () {
   var errorEmail = $('#email-neutron-pos-error-email');
   var mainForm = $('#email-neutron-pos-form');
   var successResponse = $('#email-neutron-pos-success-response');
+  var errorSubmit = $('#email-neutron-pos #email-neutron-pos-error-submit');
     $("#email-neutron-pos-form").submit(function (event) {
       
     
@@ -61,6 +62,11 @@ $(document).ready(function () {
           mainForm.hide();
           successResponse.show();
         }).fail(function(data){
+          showButton.show();
+          loadingForm.hide();
+          errorResponse.hide();
+          errorEmail.hide();
+          errorSubmit.show();
           console.log("failed")
         });
       

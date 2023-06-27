@@ -3,29 +3,30 @@
 <head>
 <meta charset="utf-8">
 <title>jQuery Form Submit</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!-- <link href="https://cdn.statically.io/gh/mikorecare/email-neutron-pos-embed/main/styles.css" rel="stylesheet" type="text/css"> -->
-<link href="styles.css" rel="stylesheet" type="text/css"> 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+
 <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/mikorecare/email-neutron-pos-embed/main/submit.js">
 </script> -->
-<script type="text/javascript" src="submit.js">
+
 </script>
 </head>
 <body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="styles.css" rel="stylesheet" type="text/css"> 
     <div id="email-neutron-pos">
         <div>
             <h2>
                 Want to know when we’re going to open?
             </h2>
-            <h4>Type your email below to be the first to know!</h4>
+            <p>Type your email below to be the first to know!</p>
         </div>
     <div id="email-neutron-pos-success-response">
         <h2>Thank you! Your email address has been saved.</h2>
     </div>
     <form action="http://localhost:3333/api/v1/recipients/embed" method="post" name="email-neutron-pos-form" id="email-neutron-pos-form" novalidate> 
             <div>
-            <input type="hidden" name="email-neutron-pos-id" id="email-neutron-pos-id" value="63cde7529b8391388065cf5d">
+            <input type="hidden" name="email-neutron-pos-id" id="email-neutron-pos-id" value="63cde8049b8391388065cfbe">
             </div>
             <div class="email-neutron-pos-field-group">
             <input type="text" name="email-neutron-pos-first-name" id="email-neutron-pos-first-name" placeholder="First Name" required>
@@ -33,18 +34,21 @@
             <div class="email-neutron-pos-field-group">
             <input type="text" name="email-neutron-pos-last-name" id="email-neutron-pos-last-name" placeholder="Last Name" required>
             </div>
-        <div class="email-neutron-pos-field-group">
+            <div class="email-neutron-pos-field-group">
             <input type="email" name="email-neutron-pos-email" id="email-neutron-pos-email" placeholder="Email" required>
-        </div>
+            </div>
         <div class="clear">
             <button type="submit" id="email-neutron-pos-loader" class="buttonload" disabled><i class="fa fa-refresh fa-spin"></i>PLEASE WAIT</button>
             <button type="submit" id="email-neutron-pos-embedded-subscribe" class="button">SUBSCRIBE</button>
             <label class="error" id="email-neutron-pos-error-response">All fields are required</label>
             <label class="error" id="email-neutron-pos-error-email">Please enter a valid email address</label>
+            <label class="error" id="email-neutron-pos-error-submit">There's an error while submitting your data. Please try again</label>
         </div>
 
     </form>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script type="text/javascript" src="submit.js"></script>
 </body>
 </html>
 

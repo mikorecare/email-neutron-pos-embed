@@ -1,18 +1,18 @@
-#email-neutron-pos {background:#e51068; clear:left; font:14px Helvetica,Arial,sans-serif;  max-width:600px; min-height: 375px;}
+#email-neutron-pos {background:#e51068; clear:left; font:14px;   font-family: "Lucida Console", "Courier New", monospace;  max-width:500px; min-height: 375px;}
 #email-neutron-pos 
 form {
-    display:block; position:relative; text-align:left; margin: 20px
+    display:block; position:relative; text-align:left; margin: 20px; 
 }
 #email-neutron-pos 
 h2 {
-    color: #FFFFFF!important; font-weight:bold; font-size:1.4em; padding: 1%; border-width: 0; margin: 0;
+    color: #FFFFFF!important; font-weight:bold; font-size:1.4em; padding: 3%; border-width: 0; margin: 0;
 }
-#email-neutron-pos h4 {
-    color: #FFFFFF!important; font-weight:bold;font-size:1.2em; padding: 1%; border-width: 0; margin: 0 0 5px;
+#email-neutron-pos p {
+    color: #FFFFFF!important; font-weight:bold; font-size:1.4em; padding: 0 3% 3%; border-width: 0; margin: 0 0 5px; font-family: monospace;
 }
 #email-neutron-pos button {border: 1px solid #ABB0B2; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;}
 #email-neutron-pos button:focus {border-color:#333;}
-#email-neutron-pos input {border: 1px solid #ABB0B2; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;}
+#email-neutron-pos input {border: 1px solid #ABB0B2; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;    font-family: Helvetica;}
 #email-neutron-pos input:focus {border-color:#333;}
 #email-neutron-pos .button 
 {
@@ -63,7 +63,7 @@ h2 {
 #email-neutron-pos .size1of2 {clear:none; float:left; display:inline-block; width:46%; margin-right:4%;}
 * html #email-neutron-pos .size1of2 {margin-right:2%; /* Fix for IE6 double margins. */}
 #email-neutron-pos .email-neutron-pos-field-group label {display:block; margin-bottom:3px;}
-#email-neutron-pos .email-neutron-pos-field-group input {display:block; width:100%; padding:8px 0; text-indent:2%;}
+#email-neutron-pos .email-neutron-pos-field-group input {display:flex; width:100%; padding:8px 0; text-indent:2%;}
 #email-neutron-pos .indicates-required {text-align:right; font-size:11px; margin-right:4%;}
 #email-neutron-pos .asterisk {color:#e85c41; font-size:150%; font-weight:normal; position:relative; top:5px;}     
 #email-neutron-pos .clear {clear:both;}
@@ -76,6 +76,7 @@ h2 {
 #email-neutron-pos div#email-neutron-pos-responses {float:left; top:-1.4em; padding:0em .5em 0em .5em; overflow:hidden; width:90%; clear: both;}
 #email-neutron-pos div.response {margin:1em 0 em; padding:1em .5em .5em 0; font-weight:bold; float:left; top:-1.5em; z-index:1; width:80%; display: inline; }
 #email-neutron-pos #email-neutron-pos-error-response {display:none;}
+#email-neutron-pos #email-neutron-pos-error-submit {display:none;}
 #email-neutron-pos #email-neutron-pos-error-email {display:none;}
 #email-neutron-pos #email-neutron-pos-success-response {color:#ffffff; display:none;}
 #email-neutron-pos label.error {display:block; float:none; width:auto; margin-left:1.05em; text-align:left; padding:.5em 0 2em; color:rgb(255, 251, 0); font-weight:bold; min-height: 50px;}
