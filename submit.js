@@ -56,7 +56,15 @@ $(document).ready(function () {
           dataType: "json",
           encode: true,
         }).done(function (data) {
-          // console.log(data);
+          if(data.message==='no audience'){
+            showButton.show();
+            loadingForm.hide();
+            errorResponse.hide();
+            errorEmail.hide();
+            errorSubmit.show();
+            console.log(data.message)
+            return false;
+          }
           loadingForm.hide();
           showButton.show();
           mainForm.hide();
@@ -67,7 +75,7 @@ $(document).ready(function () {
           errorResponse.hide();
           errorEmail.hide();
           errorSubmit.show();
-          console.log("failed")
+          console.log('server error')
         });
       
         event.preventDefault();
