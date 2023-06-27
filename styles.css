@@ -60,7 +60,7 @@ h2 {
 #email-neutron-pos .nowrap {white-space:nowrap;}
 
 #email-neutron-pos .email-neutron-pos-field-group {clear:left; position:relative; width:96%; padding-bottom:3%; min-height:50px; display:grid;}
-#email-neutron-pos .size1of2 {clear:none; float:left; display:inline-block; width:46%; margin-right:4%;}
+#email-neutron-pos .size1of2 {clear:none; display:inline-block; width:46%; margin-right:4%;}
 * html #email-neutron-pos .size1of2 {margin-right:2%; /* Fix for IE6 double margins. */}
 #email-neutron-pos .email-neutron-pos-field-group label {display:block; margin-bottom:3px;}
 #email-neutron-pos .email-neutron-pos-field-group input {display:flex; width:100%; padding:8px 0; text-indent:2%;}
