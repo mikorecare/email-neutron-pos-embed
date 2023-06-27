@@ -12,29 +12,34 @@ $(document).ready(function () {
       if($.trim($("#email-neutron-pos-id").val())===""){
           errorResponse.show();
           errorEmail.hide();
+          errorSubmit.hide();
           event.preventDefault();
           return false;
       }
       else if($.trim($("#email-neutron-pos-first-name").val())===""){
           errorResponse.show();
           errorEmail.hide();
+          errorSubmit.hide();
           event.preventDefault();
           return false;
       }
       else if($.trim($("#email-neutron-pos-last-name").val())===""){
           errorResponse.show();
           errorEmail.hide();
+          errorSubmit.hide();
           event.preventDefault();
           return false;
       }
       else if($.trim($("#email-neutron-pos-email").val())===""){
           errorResponse.show();
+          errorSubmit.hide();
           errorEmail.hide();
           event.preventDefault();
           return false;
       }
       else if(isEmail($("#email-neutron-pos-email").val())===false){
           errorEmail.show();
+          errorSubmit.hide();
           errorResponse.hide();
           event.preventDefault();
           return false;
